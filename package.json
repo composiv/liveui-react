@@ -1,0 +1,85 @@
+{
+  "name": "@composiv/liveui-react",
+  "version": "0.1.0",
+  "description": "Includes RemoteComponent used by LiveUI applications.",
+  "main": "./src/index.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "npm run webpack && NODE_ENV=production npm run webpack",
+    "webpack": "webpack",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/composiv/liveui-react"
+  },
+  "keywords": [
+    "composiv",
+    "LiveUI",
+    "Remote",
+    "Microservices",
+    "Containers",
+    "Kubernetes",
+    "Worklow"
+  ],
+  "author": "composiv",
+  "license": "Apache-2.0",
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:eslint:fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "dependencies": {
+    "prop-types": "15.7.2"
+  },
+  "peerDependencies": {
+    "@composiv/liveui-core": "0.1.0"
+  },
+  "devDependencies": {
+    "react": "16.13.1",
+    "react-dom": "^16.13.1",
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "7.9.0",
+    "@babel/plugin-transform-react-constant-elements": "7.9.0",
+    "@babel/plugin-transform-react-inline-elements": "7.9.0",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-react": "7.9.4",
+    "@babel/register": "^7.9.0",
+    "@composiv/liveui-core": "0.1.0",
+    "@testing-library/react": "^10.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.3.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "jest": "^25.3.0",
+    "lint-staged": "^8.1.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "^16.13.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

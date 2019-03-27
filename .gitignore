@@ -1,0 +1,24 @@
+node_modules
+dist
+bin
+build
+.history
+
+package-lock.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+.scannerwork
+lcov-report
+/.project
+**/__snapshots__/
+coverage-final.json
+lcov.info
+test-report.json
+test-report.xml
+
+cjs
+
+coverage
