@@ -21,7 +21,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Registry, ViewBuilder } from '@composiv/liveui-core';
+import { Registry, ViewBuilder } from '@eclipse-muto/liveui-core';
 import PropTypes from 'prop-types';
 
 function RemoteComponent(props) {

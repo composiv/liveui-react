@@ -10,13 +10,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'cjs'),
     filename,
-    library: '@composiv/liveui-react',
+    library: '@eclipse-muto/liveui-react',
     libraryTarget: 'commonjs2',
   },
   externals: {
     react: 'commonjs2 react',
     'react-native': 'commonjs2 react-native',
-    '@composiv/liveui-core': 'commonjs2 @composiv/liveui-core',
+    '@eclipse-muto/liveui-core': 'commonjs2 @eclipse-muto/liveui-core',
   },
   devtool: 'source-map', // Avoid inline-*** and eval-*** use in production as they can increase bundle size and reduce the overall performance.
   plugins: [
